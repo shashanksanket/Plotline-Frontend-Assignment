@@ -1,11 +1,9 @@
 import React, { useState,useEffect } from 'react';
 import './form.css';
-import Button from '../../components/Buttons';
 import Screen from '../screen/screen'
 
 const Form = () => {
     const [selectedButton, setSelectedButton] = useState('Button 1');
-    const [targetelement, setTargetElement] = useState('');
     const [tooltiptext, setTooltipText] = useState('');
     const [textsize, setTextSize] = useState('');
     const [padding, setPadding] = useState('');
@@ -15,11 +13,10 @@ const Form = () => {
     const [tooltipwidth, setTooltipWidth] = useState('');
     const [arrowwidth, setArrowWidth] = useState('');
     const [arrowheight, setArrowHeight] = useState('');
+    const [count,setCount] = useState('')
 
     useEffect(() => {
         const storedData = JSON.parse(localStorage.getItem(selectedButton));
-       
-        setTargetElement(selectedButton);
         setTooltipText(storedData?.tooltiptext || 'Your Text Here');
         setTextSize(storedData?.textsize || '10px');
         setPadding(storedData?.padding || '5px');
@@ -31,6 +28,7 @@ const Form = () => {
         setArrowHeight(storedData?.arrowheight || '22px');
     }, [selectedButton]);
     const handleInputChange = (event, fieldName, stateUpdater) => {
+        setCount(count+1)
         stateUpdater(event.target.value);
         const updatedData = {
             ...JSON.parse(localStorage.getItem(selectedButton)),
@@ -103,7 +101,7 @@ const Form = () => {
                     </div>
                 </div>
             </div>
-            <Screen formChanged={selectedButton} />
+            <Screen formChanged={count} />
         </>
     );
 };

@@ -29,8 +29,7 @@ const Screen = ({formChanged}) => {
             setBtn5Styles(JSON.parse(storedBtn5));
         }
 
-        console.log(btn1,btn2,btn3,btn4,btn5)
-    });
+    },[formChanged]);
 	const defaultFormdata = {
         targetelement: '',
         tooltiptext: 'Your Text Here',
