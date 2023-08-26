@@ -9,7 +9,7 @@ const Button = ({ text, data }) => {
             <div className="button-container">
                 <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
                     <button className="button tooltip">{text}</button>
-                    <img className='arrow' style={{ width: "20px", height: "10px" }} src="/assets/arrow.svg" alt="arrow" />
+                    <img className='arrow' style={{ width: "20px", height: "10px" }} src={process.env.PUBLIC_URL + '/assets/arrow.svg'} alt="arrow" />
                     <div
                         className="tooltip-content"
                         style={{ color: data.textcolour, fontSize: data.textsize, padding: data.padding, backgroundColor: data.bgcolour, borderRadius: data.cornerradius, width: data.tooltipwidth }}>
