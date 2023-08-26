@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Plotline-Frontend-Assignment/static/css/main.7cbe400e.css",
+    "main.js": "/Plotline-Frontend-Assignment/static/js/main.bb4a5d0d.js",
+    "index.html": "/Plotline-Frontend-Assignment/index.html",
+    "main.7cbe400e.css.map": "/Plotline-Frontend-Assignment/static/css/main.7cbe400e.css.map",
+    "main.bb4a5d0d.js.map": "/Plotline-Frontend-Assignment/static/js/main.bb4a5d0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cbe400e.css",
+    "static/js/main.bb4a5d0d.js"
+  ]
+}
