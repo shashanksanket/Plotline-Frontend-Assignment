@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# ReactJS Button Styler App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the ReactJS Tooltip Styler App! This is a brief overview of the features and functionality of the project.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Description](#description)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Persistent Data](#persistent-data)
+- [Known Issues](#known-issues)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The ReactJS Tooltip Styler App allows users to customize the appearance of tooltips and create tooltips with various properties. The app consists of two pages: Form and Screen. Users can input values such as target element, padding, text color, background color, text size, tooltip width, corner radius, arrow width, arrow height, and even upload an image. The styles defined in the Form page are reflected on the buttons and tooltips displayed in the Screen page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Dynamic customization of tooltip properties including padding, text color, background color, text size, tooltip width, corner radius, arrow width, and arrow height.
+- Image upload feature to display images within tooltips.
+- LocalStorage integration for persisting user-defined styles across sessions.
+- Two main pages: Form for inputting styles and Screen for displaying buttons with applied styles.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To run the project on your local machine, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/reactjs-button-styler.git
+2. Navigate to the project directory:
+   ```bash
+   cd Plotline-Frontend-assignment
+3. Install dependencies:
+   ```bash
+   npm install
+4. Start the development server:
+   ```bash
+   npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Open your browser and navigate to [http://localhost:3000] to access the Form page.
+2. In the Form page, input different styles for buttons and tooltips.
+3. Choose the target element (Button 1 to Button 5) and customize its properties.
+4. Upload an image to be displayed within tooltips.
+5. Switch to the Screen page to see the buttons with the applied styles.
 
-### `npm run eject`
+## Persistent Data
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The app uses LocalStorage to store the user-defined styles. This means that even if you refresh the page or close the browser, your customized styles will be preserved. The data will be loaded when you revisit the app.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Known Issues
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Image Update Glitch:** There is a minor issue with the dynamic update of uploaded images. The image updates are visible only after a page refresh on both the Form and Screen pages.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deployment
 
-## Learn More
+The app has been successfully deployed to GitHub Pages. You can access the deployed version here: (https://shashanksanket.github.io/Plotline-Frontend-Assignment/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please feel free to create issues or pull requests in the GitHub repository.
