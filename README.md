@@ -1,4 +1,4 @@
-# ReactJS Button Styler App
+# ReactJS Tooltip Styler App
 
 Welcome to the ReactJS Tooltip Styler App! This is a brief overview of the features and functionality of the project.
 
