@@ -16,8 +16,28 @@ const Form = () => {
     const [arrowwidth, setArrowWidth] = useState('');
     const [arrowheight, setArrowHeight] = useState('');
 
-  
-   
+    useEffect(() => {
+        const storedData = JSON.parse(localStorage.getItem(selectedButton));
+       
+        setTargetElement(selectedButton);
+        setTooltipText(storedData?.tooltiptext || 'Your Text Here');
+        setTextSize(storedData?.textsize || '10px');
+        setPadding(storedData?.padding || '5px');
+        setTextColour(storedData?.textcolour || 'white');
+        setBgColour(storedData?.bgcolour || 'black');
+        setCornerRadius(storedData?.cornerradius || '5%');
+        setTooltipWidth(storedData?.tooltipwidth || 'max-content');
+        setArrowWidth(storedData?.arrowwidth || '20px');
+        setArrowHeight(storedData?.arrowheight || '22px');
+    }, [selectedButton]);
+    const handleInputChange = (event, fieldName, stateUpdater) => {
+        stateUpdater(event.target.value);
+        const updatedData = {
+            ...JSON.parse(localStorage.getItem(selectedButton)),
+            [fieldName]: event.target.value
+        };
+        localStorage.setItem(selectedButton, JSON.stringify(updatedData));
+    };
 
     return (
         <>
