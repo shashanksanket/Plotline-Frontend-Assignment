@@ -30,7 +30,7 @@
 
 }
 .tooltip-content {
-    width: max-content;
+    max-width: 300px;
     padding: 5px;
     background-color:#000;
     color: #FFF;
