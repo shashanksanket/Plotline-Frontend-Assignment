@@ -12,7 +12,7 @@ const Button = ({ text, data }) => {
                     <img className='arrow' style={{ width: "20px", height: "10px" }} src="/assets/arrow.svg" alt="arrow" />
                     <div
                         className="tooltip-content"
-                        style={{ color: data.textcolor, fontSize: data.textsize, padding: data.padding, backgroundColor: data.bgcolour, borderRadius: data.cornerradius, width: data.tooltipwidth }}>
+                        style={{ color: data.textcolour, fontSize: data.textsize, padding: data.padding, backgroundColor: data.bgcolour, borderRadius: data.cornerradius, width: data.tooltipwidth }}>
                         {data.tooltiptext || "Your Text Here"}
                         <div style={{display:"block"}}>
                             {data.imageFile && (
